@@ -16,6 +16,5 @@ dubbo:
       timeout: 60000
 #      isDefault: true
 
-
-
-
+server:
+  port: 8082
