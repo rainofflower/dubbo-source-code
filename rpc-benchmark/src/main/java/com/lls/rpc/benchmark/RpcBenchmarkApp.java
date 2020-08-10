@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
+ * 使用JMH进行压测, 32 线程, 3 轮预热 3 轮测试 每轮 10s
  * @author YangHui
  */
 @State(Scope.Benchmark)
