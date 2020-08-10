@@ -1,4 +1,4 @@
-package com.lls.rpc.benchmark;
+package rpc.benchmark;
 
 import com.yanghui.learn.dubbo.provider.api.UserProvider;
 import com.yanghui.learn.dubbo.provider.dto.UserDTO;
