@@ -5,22 +5,23 @@ spring:
 dubbo:
   protocol:
     name: dubbo
-    port: 12345
-#  registry:
-#    address: zookeeper://172.16.87.26:2181
-#    timeout: 60000
-  registries:
-    r1:
+    port: 12366
+  registry:
+#    address: zookeeper://192.168.43.151:2181
+    timeout: 60000
+    address: N/A
+#  registries:
+#    r1:
 #      id: r1-id
-      address: zookeeper://172.16.87.26:2181
-      timeout: 60000
+#      address: zookeeper://172.16.87.26:2181
+#      timeout: 60000
 #      isDefault: false
-      register: false
-    r2:
+#      register: false
+#    r2:
 #      id: r2-id
-      address: zookeeper://172.16.87.28:2181
-      timeout: 60000
+#      address: zookeeper://172.16.87.28:2181 #zookeeper://192.168.43.151:2181   #zookeeper://172.16.87.28:2181
+#      timeout: 60000
 #      isDefault: true
-      register: true
+#      register: true
 
 

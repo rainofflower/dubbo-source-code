@@ -3,18 +3,25 @@ spring:
     name: user-consumer
 
 dubbo:
-  registries:
-    r1:
+  registry:
+    address: zookeeper://192.168.43.151:2181
+    timeout: 60000
+#  registries:
+#    r1:
 #      id: r1-id
-      address: zookeeper://172.16.87.26:2181
-      timeout: 60000
+#      address: zookeeper://172.16.87.26:2181
+#      timeout: 60000
 #      isDefault: true
 #      register: false
-    r2:
+#    r2:
 #      id: r2-id
-      address: zookeeper://172.16.87.28:2181
-      timeout: 60000
+#      address: zookeeper://172.16.87.28:2181 #zookeeper://192.168.43.151:2181   #zookeeper://172.16.87.28:2181
+#      timeout: 60000
 #      isDefault: true
 
 server:
-  port: 8082
+  port: 8083
+
+logging:
+  level:
+    root: info

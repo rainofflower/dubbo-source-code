@@ -7,14 +7,14 @@ import org.apache.dubbo.config.annotation.Service;
 /**
  * @author YangHui
  */
-@Service(version = "1.0.0")
+@Service
 public class UserProviderImpl implements UserProvider {
 
     @Override
     public UserDTO getUserById(Long id) {
         UserDTO userDTO = new UserDTO();
         userDTO.setId(id);
-        userDTO.setName("TEST");
+        userDTO.setName("TEST-2");
         userDTO.setAge(20);
         return userDTO;
     }
